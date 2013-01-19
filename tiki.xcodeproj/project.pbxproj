@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E21C1BE16AB3E94008F84CD /* tiki_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E21C1BD16AB3E94008F84CD /* tiki_button@2x.png */; };
+		7E21C1C016AB43FA008F84CD /* metal_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E21C1BF16AB43FA008F84CD /* metal_bg@2x.png */; };
+		7E23817616A5164D003E1EAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E23817516A5164D003E1EAC /* UIKit.framework */; };
+		7E23817816A5164D003E1EAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E23817716A5164D003E1EAC /* Foundation.framework */; };
+		7E23817A16A5164D003E1EAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E23817916A5164D003E1EAC /* CoreGraphics.framework */; };
+		7E23818016A5164D003E1EAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E23817E16A5164D003E1EAC /* InfoPlist.strings */; };
+		7E23818216A5164D003E1EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E23818116A5164D003E1EAC /* main.m */; };
+		7E23818616A5164D003E1EAC /* tikiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E23818516A5164D003E1EAC /* tikiAppDelegate.m */; };
+		7E23818816A5164D003E1EAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E23818716A5164D003E1EAC /* Default.png */; };
+		7E23818A16A5164D003E1EAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E23818916A5164D003E1EAC /* Default@2x.png */; };
+		7E23818C16A5164D003E1EAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E23818B16A5164D003E1EAC /* Default-568h@2x.png */; };
+		7E23819516A516B0003E1EAC /* tikiRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E23819316A516B0003E1EAC /* tikiRootViewController.m */; };
+		7E23819616A516B0003E1EAC /* tikiRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E23819416A516B0003E1EAC /* tikiRootViewController.xib */; };
+		7E23819D16A524D4003E1EAC /* tikis.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E23819C16A524D4003E1EAC /* tikis.plist */; };
+		7E23819F16A525D0003E1EAC /* tikiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E23819E16A525D0003E1EAC /* tikiViewCell.xib */; };
+		7E2381A216A525F3003E1EAC /* tikiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2381A116A525F3003E1EAC /* tikiViewCell.m */; };
+		7E2381A616A527DA003E1EAC /* tikiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2381A416A527DA003E1EAC /* tikiDetailViewController.m */; };
+		7E2381A716A527DA003E1EAC /* tikiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2381A516A527DA003E1EAC /* tikiDetailViewController.xib */; };
+		7E50020A16A61FBA004426F8 /* tikiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E50020916A61FBA004426F8 /* tikiCollectionViewCell.m */; };
+		7E50020D16A61FC8004426F8 /* tikiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E50020C16A61FC8004426F8 /* tikiCollectionViewCell.xib */; };
+		7E65540516A5E54500C3F0EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6EDF8B16A5E40700D83FBD /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7E65541816A5F82400C3F0EF /* tikiSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E65541616A5F82400C3F0EF /* tikiSecondViewController.m */; };
+		7E65541916A5F82400C3F0EF /* tikiSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E65541716A5F82400C3F0EF /* tikiSecondViewController.xib */; };
+		7E6EDF2B16A5B6B000D83FBD /* tikiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDF2A16A5B6B000D83FBD /* tikiInfo.m */; };
+		7E6EDF3016A5D4CB00D83FBD /* lightning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E6EDF2F16A5D4CA00D83FBD /* lightning@2x.png */; };
+		7E6EDF8516A5E24B00D83FBD /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDF8416A5E24B00D83FBD /* KGModal.m */; };
+		7E8E468316A8BD3B00282D79 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8E468216A8BD3B00282D79 /* Twitter.framework */; };
+		7E8E468F16A8C0EA00282D79 /* tikiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E468E16A8C0EA00282D79 /* tikiButton.m */; };
+		7E8F081416A7490500FC7A9D /* topBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F081316A7490500FC7A9D /* topBar@2x.png */; };
+		7E8F082716A752F200FC7A9D /* tikiTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F082616A752F200FC7A9D /* tikiTheme.m */; };
+		7E8F082D16A75AC200FC7A9D /* back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F082C16A75AC200FC7A9D /* back_arrow@2x.png */; };
+		7E8F085C16A7659B00FC7A9D /* detail_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F085B16A7659B00FC7A9D /* detail_bg@2x.png */; };
+		7E8F086F16A7721600FC7A9D /* tabBarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F086E16A7721600FC7A9D /* tabBarBg@2x.png */; };
+		7E8F087A16A79E4B00FC7A9D /* shark_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F087916A79E4B00FC7A9D /* shark_thumb@2x.png */; };
+		7E8F087D16A79EFF00FC7A9D /* thunder_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F087C16A79EFF00FC7A9D /* thunder_thumb@2x.png */; };
+		7E8F087F16A79F8100FC7A9D /* explosions_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F087E16A79F8100FC7A9D /* explosions_thumb@2x.png */; };
+		7E8F088316A7A3BE00FC7A9D /* explosions_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F088216A7A3BE00FC7A9D /* explosions_large@2x.png */; };
+		7E8F088516A7A62000FC7A9D /* thunder_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F088416A7A61F00FC7A9D /* thunder_large@2x.png */; };
+		7E8F089316A7B36800FC7A9D /* tikiBoldLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F089216A7B36800FC7A9D /* tikiBoldLabel.m */; };
+		7EEFB78616A7BAAE00DFE8AA /* GILGONS_.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EEFB78516A7BAAE00DFE8AA /* GILGONS_.ttf */; };
+		7EEFB78816A7BBA600DFE8AA /* shark_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EEFB78716A7BBA600DFE8AA /* shark_large@2x.png */; };
+		7EEFB78A16A7BDA200DFE8AA /* lightning_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EEFB78916A7BDA200DFE8AA /* lightning_button@2x.png */; };
+		7EEFB78D16A7BF6800DFE8AA /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFB78C16A7BF6800DFE8AA /* UIColor+HexColors.m */; };
+		7EEFB79016A7BFD500DFE8AA /* UIView+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFB78F16A7BFD500DFE8AA /* UIView+Categories.m */; };
+		7EEFB7AD16A8775C00DFE8AA /* selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EEFB7AC16A8775C00DFE8AA /* selected@2x.png */; };
+		7EEFB7B016A87B2800DFE8AA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEFB7AF16A87B2800DFE8AA /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E21C1BD16AB3E94008F84CD /* tiki_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki_button@2x.png"; sourceTree = "<group>"; };
+		7E21C1BF16AB43FA008F84CD /* metal_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal_bg@2x.png"; sourceTree = "<group>"; };
+		7E23817116A5164D003E1EAC /* tiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E23817516A5164D003E1EAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E23817716A5164D003E1EAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E23817916A5164D003E1EAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E23817D16A5164D003E1EAC /* tiki-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tiki-Info.plist"; sourceTree = "<group>"; };
+		7E23817F16A5164D003E1EAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E23818116A5164D003E1EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E23818316A5164D003E1EAC /* tiki-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tiki-Prefix.pch"; sourceTree = "<group>"; };
+		7E23818416A5164D003E1EAC /* tikiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tikiAppDelegate.h; sourceTree = "<group>"; };
+		7E23818516A5164D003E1EAC /* tikiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tikiAppDelegate.m; sourceTree = "<group>"; };
+		7E23818716A5164D003E1EAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7E23818916A5164D003E1EAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7E23818B16A5164D003E1EAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E23819216A516B0003E1EAC /* tikiRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiRootViewController.h; sourceTree = "<group>"; };
+		7E23819316A516B0003E1EAC /* tikiRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiRootViewController.m; sourceTree = "<group>"; };
+		7E23819416A516B0003E1EAC /* tikiRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiRootViewController.xib; sourceTree = "<group>"; };
+		7E23819C16A524D4003E1EAC /* tikis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tikis.plist; sourceTree = "<group>"; };
+		7E23819E16A525D0003E1EAC /* tikiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiViewCell.xib; sourceTree = "<group>"; };
+		7E2381A016A525F3003E1EAC /* tikiViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiViewCell.h; sourceTree = "<group>"; };
+		7E2381A116A525F3003E1EAC /* tikiViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiViewCell.m; sourceTree = "<group>"; };
+		7E2381A316A527DA003E1EAC /* tikiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiDetailViewController.h; sourceTree = "<group>"; };
+		7E2381A416A527DA003E1EAC /* tikiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiDetailViewController.m; sourceTree = "<group>"; };
+		7E2381A516A527DA003E1EAC /* tikiDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiDetailViewController.xib; sourceTree = "<group>"; };
+		7E50020816A61FBA004426F8 /* tikiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiCollectionViewCell.h; sourceTree = "<group>"; };
+		7E50020916A61FBA004426F8 /* tikiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiCollectionViewCell.m; sourceTree = "<group>"; };
+		7E50020C16A61FC8004426F8 /* tikiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiCollectionViewCell.xib; sourceTree = "<group>"; };
+		7E65541516A5F82400C3F0EF /* tikiSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiSecondViewController.h; sourceTree = "<group>"; };
+		7E65541616A5F82400C3F0EF /* tikiSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiSecondViewController.m; sourceTree = "<group>"; };
+		7E65541716A5F82400C3F0EF /* tikiSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiSecondViewController.xib; sourceTree = "<group>"; };
+		7E6EDF2916A5B6AF00D83FBD /* tikiInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiInfo.h; sourceTree = "<group>"; };
+		7E6EDF2A16A5B6B000D83FBD /* tikiInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiInfo.m; sourceTree = "<group>"; };
+		7E6EDF2F16A5D4CA00D83FBD /* lightning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lightning@2x.png"; sourceTree = "<group>"; };
+		7E6EDF8316A5E24600D83FBD /* KGModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModal.h; sourceTree = "<group>"; };
+		7E6EDF8416A5E24B00D83FBD /* KGModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModal.m; sourceTree = "<group>"; };
+		7E6EDF8B16A5E40700D83FBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E8E468216A8BD3B00282D79 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7E8E468D16A8C0EA00282D79 /* tikiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiButton.h; sourceTree = "<group>"; };
+		7E8E468E16A8C0EA00282D79 /* tikiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiButton.m; sourceTree = "<group>"; };
+		7E8F081316A7490500FC7A9D /* topBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBar@2x.png"; sourceTree = "<group>"; };
+		7E8F082516A752F200FC7A9D /* tikiTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiTheme.h; sourceTree = "<group>"; };
+		7E8F082616A752F200FC7A9D /* tikiTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiTheme.m; sourceTree = "<group>"; };
+		7E8F082C16A75AC200FC7A9D /* back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_arrow@2x.png"; sourceTree = "<group>"; };
+		7E8F085B16A7659B00FC7A9D /* detail_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail_bg@2x.png"; sourceTree = "<group>"; };
+		7E8F086E16A7721600FC7A9D /* tabBarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarBg@2x.png"; sourceTree = "<group>"; };
+		7E8F087916A79E4B00FC7A9D /* shark_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shark_thumb@2x.png"; sourceTree = "<group>"; };
+		7E8F087C16A79EFF00FC7A9D /* thunder_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thunder_thumb@2x.png"; sourceTree = "<group>"; };
+		7E8F087E16A79F8100FC7A9D /* explosions_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosions_thumb@2x.png"; sourceTree = "<group>"; };
+		7E8F088216A7A3BE00FC7A9D /* explosions_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosions_large@2x.png"; sourceTree = "<group>"; };
+		7E8F088416A7A61F00FC7A9D /* thunder_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thunder_large@2x.png"; sourceTree = "<group>"; };
+		7E8F089116A7B36800FC7A9D /* tikiBoldLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiBoldLabel.h; sourceTree = "<group>"; };
+		7E8F089216A7B36800FC7A9D /* tikiBoldLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiBoldLabel.m; sourceTree = "<group>"; };
+		7EEFB78516A7BAAE00DFE8AA /* GILGONS_.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GILGONS_.ttf; sourceTree = "<group>"; };
+		7EEFB78716A7BBA600DFE8AA /* shark_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shark_large@2x.png"; sourceTree = "<group>"; };
+		7EEFB78916A7BDA200DFE8AA /* lightning_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lightning_button@2x.png"; sourceTree = "<group>"; };
+		7EEFB78B16A7BF6800DFE8AA /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		7EEFB78C16A7BF6800DFE8AA /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
+		7EEFB78E16A7BFD500DFE8AA /* UIView+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Categories.h"; sourceTree = "<group>"; };
+		7EEFB78F16A7BFD500DFE8AA /* UIView+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Categories.m"; sourceTree = "<group>"; };
+		7EEFB7AC16A8775C00DFE8AA /* selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected@2x.png"; sourceTree = "<group>"; };
+		7EEFB7AF16A87B2800DFE8AA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E23816E16A5164D003E1EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8E468316A8BD3B00282D79 /* Twitter.framework in Frameworks */,
+				7EEFB7B016A87B2800DFE8AA /* MessageUI.framework in Frameworks */,
+				7E65540516A5E54500C3F0EF /* QuartzCore.framework in Frameworks */,
+				7E23817616A5164D003E1EAC /* UIKit.framework in Frameworks */,
+				7E23817816A5164D003E1EAC /* Foundation.framework in Frameworks */,
+				7E23817A16A5164D003E1EAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E23816616A5164D003E1EAC = {
+			isa = PBXGroup;
+			children = (
+				7E8E468216A8BD3B00282D79 /* Twitter.framework */,
+				7EEFB7AF16A87B2800DFE8AA /* MessageUI.framework */,
+				7E23817B16A5164D003E1EAC /* tiki */,
+				7E23817416A5164D003E1EAC /* Frameworks */,
+				7E23817216A5164D003E1EAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E23817216A5164D003E1EAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E23817116A5164D003E1EAC /* tiki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E23817416A5164D003E1EAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E6EDF8B16A5E40700D83FBD /* QuartzCore.framework */,
+				7E23817516A5164D003E1EAC /* UIKit.framework */,
+				7E23817716A5164D003E1EAC /* Foundation.framework */,
+				7E23817916A5164D003E1EAC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E23817B16A5164D003E1EAC /* tiki */ = {
+			isa = PBXGroup;
+			children = (
+				7E23818416A5164D003E1EAC /* tikiAppDelegate.h */,
+				7E23818516A5164D003E1EAC /* tikiAppDelegate.m */,
+				7E8F088C16A7AFB900FC7A9D /* Categories */,
+				7E8F082316A752C300FC7A9D /* Custom Views */,
+				7E6EDF8216A5E23300D83FBD /* third party libs */,
+				7E6EDF3416A5D52E00D83FBD /* info */,
+				7E6EDF3316A5D51500D83FBD /* View Controllers */,
+				7E6EDF3216A5D50300D83FBD /* View Cells */,
+				7E23817C16A5164D003E1EAC /* Supporting Files */,
+				7E6EDF3116A5D4D700D83FBD /* images */,
+			);
+			path = tiki;
+			sourceTree = "<group>";
+		};
+		7E23817C16A5164D003E1EAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E23817D16A5164D003E1EAC /* tiki-Info.plist */,
+				7E23817E16A5164D003E1EAC /* InfoPlist.strings */,
+				7E23818116A5164D003E1EAC /* main.m */,
+				7E23818316A5164D003E1EAC /* tiki-Prefix.pch */,
+				7E23818716A5164D003E1EAC /* Default.png */,
+				7E23818916A5164D003E1EAC /* Default@2x.png */,
+				7E23818B16A5164D003E1EAC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E6EDF3116A5D4D700D83FBD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F086E16A7721600FC7A9D /* tabBarBg@2x.png */,
+				7E8F087E16A79F8100FC7A9D /* explosions_thumb@2x.png */,
+				7EEFB78516A7BAAE00DFE8AA /* GILGONS_.ttf */,
+				7E8F085B16A7659B00FC7A9D /* detail_bg@2x.png */,
+				7EEFB7AC16A8775C00DFE8AA /* selected@2x.png */,
+				7E21C1BF16AB43FA008F84CD /* metal_bg@2x.png */,
+				7E21C1BD16AB3E94008F84CD /* tiki_button@2x.png */,
+				7EEFB78716A7BBA600DFE8AA /* shark_large@2x.png */,
+				7E8F088216A7A3BE00FC7A9D /* explosions_large@2x.png */,
+				7EEFB78916A7BDA200DFE8AA /* lightning_button@2x.png */,
+				7E8F088416A7A61F00FC7A9D /* thunder_large@2x.png */,
+				7E8F087C16A79EFF00FC7A9D /* thunder_thumb@2x.png */,
+				7E8F082C16A75AC200FC7A9D /* back_arrow@2x.png */,
+				7E8F087916A79E4B00FC7A9D /* shark_thumb@2x.png */,
+				7E8F081316A7490500FC7A9D /* topBar@2x.png */,
+				7E6EDF2F16A5D4CA00D83FBD /* lightning@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		7E6EDF3216A5D50300D83FBD /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7E50020816A61FBA004426F8 /* tikiCollectionViewCell.h */,
+				7E50020916A61FBA004426F8 /* tikiCollectionViewCell.m */,
+				7E50020C16A61FC8004426F8 /* tikiCollectionViewCell.xib */,
+				7E2381A016A525F3003E1EAC /* tikiViewCell.h */,
+				7E2381A116A525F3003E1EAC /* tikiViewCell.m */,
+				7E23819E16A525D0003E1EAC /* tikiViewCell.xib */,
+			);
+			name = "View Cells";
+			sourceTree = "<group>";
+		};
+		7E6EDF3316A5D51500D83FBD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E23819216A516B0003E1EAC /* tikiRootViewController.h */,
+				7E23819316A516B0003E1EAC /* tikiRootViewController.m */,
+				7E23819416A516B0003E1EAC /* tikiRootViewController.xib */,
+				7E65541516A5F82400C3F0EF /* tikiSecondViewController.h */,
+				7E65541616A5F82400C3F0EF /* tikiSecondViewController.m */,
+				7E65541716A5F82400C3F0EF /* tikiSecondViewController.xib */,
+				7E2381A316A527DA003E1EAC /* tikiDetailViewController.h */,
+				7E2381A416A527DA003E1EAC /* tikiDetailViewController.m */,
+				7E2381A516A527DA003E1EAC /* tikiDetailViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E6EDF3416A5D52E00D83FBD /* info */ = {
+			isa = PBXGroup;
+			children = (
+				7E23819C16A524D4003E1EAC /* tikis.plist */,
+				7E6EDF2916A5B6AF00D83FBD /* tikiInfo.h */,
+				7E6EDF2A16A5B6B000D83FBD /* tikiInfo.m */,
+			);
+			name = info;
+			sourceTree = "<group>";
+		};
+		7E6EDF8216A5E23300D83FBD /* third party libs */ = {
+			isa = PBXGroup;
+			children = (
+				7E6EDF8416A5E24B00D83FBD /* KGModal.m */,
+				7E6EDF8316A5E24600D83FBD /* KGModal.h */,
+			);
+			name = "third party libs";
+			sourceTree = "<group>";
+		};
+		7E8F082316A752C300FC7A9D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E8E468D16A8C0EA00282D79 /* tikiButton.h */,
+				7E8E468E16A8C0EA00282D79 /* tikiButton.m */,
+				7E8F082516A752F200FC7A9D /* tikiTheme.h */,
+				7E8F082616A752F200FC7A9D /* tikiTheme.m */,
+				7E8F089116A7B36800FC7A9D /* tikiBoldLabel.h */,
+				7E8F089216A7B36800FC7A9D /* tikiBoldLabel.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		7E8F088C16A7AFB900FC7A9D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7EEFB78E16A7BFD500DFE8AA /* UIView+Categories.h */,
+				7EEFB78F16A7BFD500DFE8AA /* UIView+Categories.m */,
+				7EEFB78B16A7BF6800DFE8AA /* UIColor+HexColors.h */,
+				7EEFB78C16A7BF6800DFE8AA /* UIColor+HexColors.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E23817016A5164D003E1EAC /* tiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E23818F16A5164D003E1EAC /* Build configuration list for PBXNativeTarget "tiki" */;
+			buildPhases = (
+				7E23816D16A5164D003E1EAC /* Sources */,
+				7E23816E16A5164D003E1EAC /* Frameworks */,
+				7E23816F16A5164D003E1EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tiki;
+			productName = tiki;
+			productReference = 7E23817116A5164D003E1EAC /* tiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E23816816A5164D003E1EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = tiki;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Alex Lauderdale";
+			};
+			buildConfigurationList = 7E23816B16A5164D003E1EAC /* Build configuration list for PBXProject "tiki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E23816616A5164D003E1EAC;
+			productRefGroup = 7E23817216A5164D003E1EAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E23817016A5164D003E1EAC /* tiki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E23816F16A5164D003E1EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E23818016A5164D003E1EAC /* InfoPlist.strings in Resources */,
+				7E23818816A5164D003E1EAC /* Default.png in Resources */,
+				7E23818A16A5164D003E1EAC /* Default@2x.png in Resources */,
+				7E23818C16A5164D003E1EAC /* Default-568h@2x.png in Resources */,
+				7E23819616A516B0003E1EAC /* tikiRootViewController.xib in Resources */,
+				7E23819D16A524D4003E1EAC /* tikis.plist in Resources */,
+				7E23819F16A525D0003E1EAC /* tikiViewCell.xib in Resources */,
+				7E2381A716A527DA003E1EAC /* tikiDetailViewController.xib in Resources */,
+				7E6EDF3016A5D4CB00D83FBD /* lightning@2x.png in Resources */,
+				7E65541916A5F82400C3F0EF /* tikiSecondViewController.xib in Resources */,
+				7E50020D16A61FC8004426F8 /* tikiCollectionViewCell.xib in Resources */,
+				7E8F081416A7490500FC7A9D /* topBar@2x.png in Resources */,
+				7E8F082D16A75AC200FC7A9D /* back_arrow@2x.png in Resources */,
+				7E8F085C16A7659B00FC7A9D /* detail_bg@2x.png in Resources */,
+				7E8F086F16A7721600FC7A9D /* tabBarBg@2x.png in Resources */,
+				7E8F087A16A79E4B00FC7A9D /* shark_thumb@2x.png in Resources */,
+				7E8F087D16A79EFF00FC7A9D /* thunder_thumb@2x.png in Resources */,
+				7E8F087F16A79F8100FC7A9D /* explosions_thumb@2x.png in Resources */,
+				7E8F088316A7A3BE00FC7A9D /* explosions_large@2x.png in Resources */,
+				7E8F088516A7A62000FC7A9D /* thunder_large@2x.png in Resources */,
+				7EEFB78616A7BAAE00DFE8AA /* GILGONS_.ttf in Resources */,
+				7EEFB78816A7BBA600DFE8AA /* shark_large@2x.png in Resources */,
+				7EEFB78A16A7BDA200DFE8AA /* lightning_button@2x.png in Resources */,
+				7EEFB7AD16A8775C00DFE8AA /* selected@2x.png in Resources */,
+				7E21C1BE16AB3E94008F84CD /* tiki_button@2x.png in Resources */,
+				7E21C1C016AB43FA008F84CD /* metal_bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E23816D16A5164D003E1EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E23818216A5164D003E1EAC /* main.m in Sources */,
+				7E23818616A5164D003E1EAC /* tikiAppDelegate.m in Sources */,
+				7E23819516A516B0003E1EAC /* tikiRootViewController.m in Sources */,
+				7E2381A216A525F3003E1EAC /* tikiViewCell.m in Sources */,
+				7E2381A616A527DA003E1EAC /* tikiDetailViewController.m in Sources */,
+				7E6EDF2B16A5B6B000D83FBD /* tikiInfo.m in Sources */,
+				7E6EDF8516A5E24B00D83FBD /* KGModal.m in Sources */,
+				7E65541816A5F82400C3F0EF /* tikiSecondViewController.m in Sources */,
+				7E50020A16A61FBA004426F8 /* tikiCollectionViewCell.m in Sources */,
+				7E8F082716A752F200FC7A9D /* tikiTheme.m in Sources */,
+				7E8F089316A7B36800FC7A9D /* tikiBoldLabel.m in Sources */,
+				7EEFB78D16A7BF6800DFE8AA /* UIColor+HexColors.m in Sources */,
+				7EEFB79016A7BFD500DFE8AA /* UIView+Categories.m in Sources */,
+				7E8E468F16A8C0EA00282D79 /* tikiButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E23817E16A5164D003E1EAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E23817F16A5164D003E1EAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E23818D16A5164D003E1EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E23818E16A5164D003E1EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E23819016A5164D003E1EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tiki/tiki-Prefix.pch";
+				INFOPLIST_FILE = "tiki/tiki-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E23819116A5164D003E1EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tiki/tiki-Prefix.pch";
+				INFOPLIST_FILE = "tiki/tiki-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E23816B16A5164D003E1EAC /* Build configuration list for PBXProject "tiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E23818D16A5164D003E1EAC /* Debug */,
+				7E23818E16A5164D003E1EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E23818F16A5164D003E1EAC /* Build configuration list for PBXNativeTarget "tiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E23819016A5164D003E1EAC /* Debug */,
+				7E23819116A5164D003E1EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E23816816A5164D003E1EAC /* Project object */;
+}

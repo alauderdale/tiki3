@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tikiNames</key>
+	<array>
+		<string>Explosion Tiki</string>
+		<string>Thunder Tiki</string>
+		<string>Shark Tiki</string>
+	</array>
+	<key>tikiPowers</key>
+	<array>
+		<string>The ability to channel the energy of a volcano and create bursts of fire,lava, and smoke.</string>
+		<string>Can use thunder and lightning to destroy, damage, intimidate, set firesand cause fear and uncertainty in his enemies.</string>
+		<string>Controls all sharks on earth and as the keeper of the gourd of life, can give and take life at will.</string>
+	</array>
+	<key>tikiStrengths</key>
+	<array>
+		<string>7</string>
+		<string>8</string>
+		<string>10</string>
+	</array>
+	<key>tikiDefense</key>
+	<array>
+		<string>Disappearance, Speed</string>
+		<string>Loud Noise, Air Barrier</string>
+		<string>Loud Noise, Air Barrier</string>
+	</array>
+	<key>tikiAttacks</key>
+	<array>
+		<string>Explosions</string>
+		<string>Thunder, Lightning</string>
+		<string>Shark attack, Lightning speed, Stealth</string>
+	</array>
+	<key>tikiThumbs</key>
+	<array>
+		<string>explosions_thumb</string>
+		<string>thunder_thumb</string>
+		<string>shark_thumb</string>
+	</array>
+	<key>tikiLargeImages</key>
+	<array>
+		<string>explosions_large@2x.png</string>
+		<string>thunder_large@2x.png</string>
+		<string>shark_large@2x.png</string>
+	</array>
+	<key>tikiCommands</key>
+	<array>
+		<string>Everything has its beauty but not everyone sees it.</string>
+		<string>Ignorance is the night of the mind, but a night without moon and star.</string>
+		<string>It does not matter how slowly you go so long as you do not stop.</string>
+		<string>Our greatest glory is not in never falling, but in getting up every time we do.</string>
+	</array>
+</dict>
+</plist>
