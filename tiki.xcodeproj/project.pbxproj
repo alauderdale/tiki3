@@ -35,6 +35,8 @@
 		7E6EDF2B16A5B6B000D83FBD /* tikiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDF2A16A5B6B000D83FBD /* tikiInfo.m */; };
 		7E6EDF3016A5D4CB00D83FBD /* lightning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E6EDF2F16A5D4CA00D83FBD /* lightning@2x.png */; };
 		7E6EDF8516A5E24B00D83FBD /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EDF8416A5E24B00D83FBD /* KGModal.m */; };
+		7E7A93B516AD1121008D9942 /* tiki_red_button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A93B416AD1121008D9942 /* tiki_red_button_bg@2x.png */; };
+		7E7A93B916AD114F008D9942 /* tikiRedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A93B816AD114F008D9942 /* tikiRedButton.m */; };
 		7E8E468316A8BD3B00282D79 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8E468216A8BD3B00282D79 /* Twitter.framework */; };
 		7E8E468F16A8C0EA00282D79 /* tikiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E468E16A8C0EA00282D79 /* tikiButton.m */; };
 		7E8F081416A7490500FC7A9D /* topBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F081316A7490500FC7A9D /* topBar@2x.png */; };
@@ -98,6 +100,9 @@
 		7E6EDF8316A5E24600D83FBD /* KGModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGModal.h; sourceTree = "<group>"; };
 		7E6EDF8416A5E24B00D83FBD /* KGModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModal.m; sourceTree = "<group>"; };
 		7E6EDF8B16A5E40700D83FBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E7A93B416AD1121008D9942 /* tiki_red_button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki_red_button_bg@2x.png"; sourceTree = "<group>"; };
+		7E7A93B716AD114F008D9942 /* tikiRedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiRedButton.h; sourceTree = "<group>"; };
+		7E7A93B816AD114F008D9942 /* tikiRedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiRedButton.m; sourceTree = "<group>"; };
 		7E8E468216A8BD3B00282D79 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		7E8E468D16A8C0EA00282D79 /* tikiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiButton.h; sourceTree = "<group>"; };
 		7E8E468E16A8C0EA00282D79 /* tikiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiButton.m; sourceTree = "<group>"; };
@@ -212,6 +217,7 @@
 				7E8F085B16A7659B00FC7A9D /* detail_bg@2x.png */,
 				7EEFB7AC16A8775C00DFE8AA /* selected@2x.png */,
 				7E21C1BF16AB43FA008F84CD /* metal_bg@2x.png */,
+				7E7A93B416AD1121008D9942 /* tiki_red_button_bg@2x.png */,
 				7E21C1BD16AB3E94008F84CD /* tiki_button@2x.png */,
 				7EEFB78716A7BBA600DFE8AA /* shark_large@2x.png */,
 				7E8F088216A7A3BE00FC7A9D /* explosions_large@2x.png */,
@@ -277,10 +283,12 @@
 		7E8F082316A752C300FC7A9D /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				7E8E468D16A8C0EA00282D79 /* tikiButton.h */,
 				7E41CF1A16AB7129000D2C62 /* tikiOverlayView.h */,
 				7E41CF1B16AB7129000D2C62 /* tikiOverlayView.m */,
 				7E41CF1E16AB7158000D2C62 /* tikiOverlayView.xib */,
+				7E7A93B716AD114F008D9942 /* tikiRedButton.h */,
+				7E7A93B816AD114F008D9942 /* tikiRedButton.m */,
+				7E8E468D16A8C0EA00282D79 /* tikiButton.h */,
 				7E8E468E16A8C0EA00282D79 /* tikiButton.m */,
 				7E8F082516A752F200FC7A9D /* tikiTheme.h */,
 				7E8F082616A752F200FC7A9D /* tikiTheme.m */,
@@ -380,6 +388,7 @@
 				7E21C1BE16AB3E94008F84CD /* tiki_button@2x.png in Resources */,
 				7E21C1C016AB43FA008F84CD /* metal_bg@2x.png in Resources */,
 				7E41CF1F16AB7158000D2C62 /* tikiOverlayView.xib in Resources */,
+				7E7A93B516AD1121008D9942 /* tiki_red_button_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +414,7 @@
 				7EEFB79016A7BFD500DFE8AA /* UIView+Categories.m in Sources */,
 				7E8E468F16A8C0EA00282D79 /* tikiButton.m in Sources */,
 				7E41CF1C16AB7129000D2C62 /* tikiOverlayView.m in Sources */,
+				7E7A93B916AD114F008D9942 /* tikiRedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

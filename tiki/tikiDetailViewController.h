@@ -33,10 +33,6 @@
 
 
 
-@property (strong, nonatomic) tikiOverlayView *overlayView;
-
-
-
 - (IBAction)ShowOverlay:(id)sender;
 - (IBAction)tweet:(id)sender;
 

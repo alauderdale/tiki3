@@ -92,18 +92,32 @@
 {
     tikiOverlayView *overlayView = [[[NSBundle mainBundle] loadNibNamed:@"tikiOverlayView" owner:self options:nil] objectAtIndex:0];
     overlayView.tikiCommandLabel.text = self.tikiCommandText;
-    [overlayView.mailButton addTarget:self
-                                   action:@selector(mailCommand:)
-                         forControlEvents:UIControlEventTouchDown];
+    overlayView.mailButton.hidden = YES;
     return overlayView;
 }
 
-
-- (void)popOverlay
+- (UIView *)mailView
 {
-    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
-    [[KGModal sharedInstance] showWithContentView:self.overlayView andAnimated:YES];
+    tikiOverlayView *overlayView = [[[NSBundle mainBundle] loadNibNamed:@"tikiOverlayView" owner:self options:nil] objectAtIndex:0];
+    overlayView.tikiCommandLabel.text = self.tikiCommandText;
+    [overlayView.mailButton addTarget:self
+                               action:@selector(mailCommand:)
+                     forControlEvents:UIControlEventTouchDown];
+    [overlayView.mailButton setTitle:@"Mail" forState:UIControlStateNormal];
+    return overlayView;
 }
+
+- (UIView *)tweetView
+{
+    tikiOverlayView *overlayView = [[[NSBundle mainBundle] loadNibNamed:@"tikiOverlayView" owner:self options:nil] objectAtIndex:0];
+    overlayView.tikiCommandLabel.text = self.tikiCommandText;
+    [overlayView.mailButton addTarget:self
+                               action:@selector(tweetCommand:)
+                     forControlEvents:UIControlEventTouchDown];
+    [overlayView.mailButton setTitle:@"Tweet" forState:UIControlStateNormal];
+    return overlayView;
+}
+
 
 
 - (void)mailCommand:(id)sender {
@@ -140,19 +154,6 @@
 }
 
 
-- (IBAction)ShowOverlay:(id)sender {
-    [self popOverlay];
-}
-
-- (IBAction)tweet:(id)sender {
-    
-}
-
-- (IBAction)mail:(id)sender {
-    [self popOverlay];
-}
-
-
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     switch (result)
@@ -176,6 +177,33 @@
     // Remove the mail view
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+- (void)tweetCommand:(id)sender {
+    
+    
+    [[KGModal sharedInstance] hideAnimated:YES];
+    
+    
+}
+
+
+- (IBAction)ShowOverlay:(id)sender {
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+    [[KGModal sharedInstance] showWithContentView:self.overlayView andAnimated:YES];
+}
+
+- (IBAction)tweet:(id)sender {
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+    [[KGModal sharedInstance] showWithContentView:self.tweetView andAnimated:YES];
+}
+
+- (IBAction)mail:(id)sender {
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+    [[KGModal sharedInstance] showWithContentView:self.mailView andAnimated:YES];
+}
+
+
 
 
 
