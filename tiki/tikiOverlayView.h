@@ -15,7 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *tikiCommandLabel;
 @property (weak, nonatomic) IBOutlet UIButton *mailButton;
-@property (strong, nonatomic) NSString *tikiCommandText;
+
 
 
 

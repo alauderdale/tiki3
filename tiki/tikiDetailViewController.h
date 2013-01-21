@@ -6,12 +6,13 @@
 //  Copyright (c) 2013 Alex Lauderdale. All rights reserved.
 //
 
-
+@class tikiOverlayView;
 
 #import <UIKit/UIKit.h>
 #import "UIView+Categories.h"
 #import <MessageUI/MessageUI.h>
 #import <Twitter/Twitter.h>
+
 
 @interface tikiDetailViewController : UIViewController<MFMailComposeViewControllerDelegate>;
 
@@ -21,6 +22,7 @@
 @property (strong, nonatomic) NSString *tikiStrengthText;
 @property (strong, nonatomic) NSString *tikiDefenseText;
 @property (strong, nonatomic) NSString *tikiAttackText;
+@property (strong, nonatomic) NSString *tikiCommandText;
 @property (strong, nonatomic) NSArray *tikiCommansdArray;
 @property (strong, nonatomic) IBOutlet UILabel *tikiPowerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tikiStrengthLabel;
@@ -29,6 +31,9 @@
 @property (strong, nonatomic) NSString *tikiImageText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+
+
+@property (strong, nonatomic) tikiOverlayView *overlayView;
 
 
 

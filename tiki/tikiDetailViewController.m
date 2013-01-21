@@ -88,21 +88,21 @@
     self.tikiImage.image = [UIImage imageNamed:_tikiImageText];
 }
 
+- (UIView *)overlayView
+{
+    tikiOverlayView *overlayView = [[[NSBundle mainBundle] loadNibNamed:@"tikiOverlayView" owner:self options:nil] objectAtIndex:0];
+    overlayView.tikiCommandLabel.text = self.tikiCommandText;
+    [overlayView.mailButton addTarget:self
+                                   action:@selector(mailCommand:)
+                         forControlEvents:UIControlEventTouchDown];
+    return overlayView;
+}
+
 
 - (void)popOverlay
 {
-    
-    
-    tikiOverlayView *tikiOverlayView = [[[NSBundle mainBundle] loadNibNamed:@"tikiOverlayView" owner:self options:nil] objectAtIndex:0];
-    
-//    tikiOverlayView.tikiCommandLabel.text = [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
-//    [tikiOverlayView.mailButton addTarget:self
-//               action:@selector(mailCommand:)
-//     forControlEvents:UIControlEventTouchDown];
-    
-    [[KGModal sharedInstance] showWithContentView:tikiOverlayView andAnimated:YES];
-
-
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+    [[KGModal sharedInstance] showWithContentView:self.overlayView andAnimated:YES];
 }
 
 
@@ -121,7 +121,7 @@
         UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
         NSData *imageData = UIImagePNGRepresentation(myImage);
         [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
-        NSString *emailBody = @"body";
+        NSString *emailBody = self.tikiCommandText;
         [mailer setMessageBody:emailBody isHTML:NO];
         ///left button
         [self presentViewController:mailer animated:YES completion:nil];
@@ -150,7 +150,6 @@
 
 - (IBAction)mail:(id)sender {
     [self popOverlay];
-
 }
 
 
