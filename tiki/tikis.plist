@@ -2,41 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>tikiNames</key>
-	<array>
-		<string>Explosion Tiki</string>
-		<string>Thunder Tiki</string>
-		<string>Shark Tiki</string>
-	</array>
-	<key>tikiPowers</key>
-	<array>
-		<string>The ability to channel the energy of a volcano and create bursts of fire,lava, and smoke.</string>
-		<string>Can use thunder and lightning to destroy, damage, intimidate, set firesand cause fear and uncertainty in his enemies.</string>
-		<string>Controls all sharks on earth and as the keeper of the gourd of life, can give and take life at will.</string>
-	</array>
-	<key>tikiStrengths</key>
-	<array>
-		<string>7</string>
-		<string>8</string>
-		<string>10</string>
-	</array>
-	<key>tikiDefense</key>
-	<array>
-		<string>Disappearance, Speed</string>
-		<string>Loud Noise, Air Barrier</string>
-		<string>Loud Noise, Air Barrier</string>
-	</array>
 	<key>tikiAttacks</key>
 	<array>
 		<string>Explosions</string>
 		<string>Thunder, Lightning</string>
 		<string>Shark attack, Lightning speed, Stealth</string>
-	</array>
-	<key>tikiThumbs</key>
-	<array>
-		<string>explosions_thumb</string>
-		<string>thunder_thumb</string>
-		<string>shark_thumb</string>
 	</array>
 	<key>tikiLargeImages</key>
 	<array>
@@ -44,12 +14,57 @@
 		<string>thunder_large@2x.png</string>
 		<string>shark_large@2x.png</string>
 	</array>
+	<key>tikiDefense</key>
+	<array>
+		<string>Disappearance, Speed</string>
+		<string>Loud Noise, Air Barrier</string>
+		<string>Loud Noise, Air Barrier</string>
+	</array>
 	<key>tikiCommands</key>
 	<array>
-		<string>Everything has its beauty but not everyone sees it.</string>
-		<string>Ignorance is the night of the mind, but a night without moon and star.</string>
-		<string>It does not matter how slowly you go so long as you do not stop.</string>
-		<string>Our greatest glory is not in never falling, but in getting up every time we do.</string>
+		<array>
+			<string>Sorrow looks back,
+Worry looks around,
+Faith looks up!!</string>
+			<string>Keep smiling… It makes people wonder what you’ve been up to. :)</string>
+			<string>The wisest of people in this world are those that admit when they are wrong.</string>
+		</array>
+		<array>
+			<string>If you argue with an idiot, after a while it is hard to tell who the real idiot is.</string>
+			<string>When the power of love overcomes the love of power, the world will know peace.</string>
+			<string>Revenge is a Poison meant for others, which we end up swallowing ourselves.
+Vengence is a Dark Light that blinds all who seek it.
+Don’t argue with Idiots.. They will bring you down to their level and beat you with experience.</string>
+		</array>
+		<array>
+			<string>I moaned because I had no shoes, until I met a man who had no feet.</string>
+			<string>Going to church doesn’t make you a Christian, anymore than standing in your garage makes you a car.</string>
+			<string>In the end, we will remember not the words of our enemies, but the silence of our friends.</string>
+		</array>
+	</array>
+	<key>tikiPowers</key>
+	<array>
+		<string>The ability to channel the energy of a volcano and create bursts of fire,lava, and smoke.</string>
+		<string>Can use thunder and lightning to destroy, damage, intimidate, set firesand cause fear and uncertainty in his enemies.</string>
+		<string>Controls all sharks on earth and as the keeper of the gourd of life, can give and take life at will.</string>
+	</array>
+	<key>tikiThumbs</key>
+	<array>
+		<string>explosions_thumb</string>
+		<string>thunder_thumb</string>
+		<string>shark_thumb</string>
+	</array>
+	<key>tikiNames</key>
+	<array>
+		<string>Explosion Tiki</string>
+		<string>Thunder Tiki</string>
+		<string>Shark Tiki</string>
+	</array>
+	<key>tikiStrengths</key>
+	<array>
+		<string>7</string>
+		<string>8</string>
+		<string>10</string>
 	</array>
 </dict>
 </plist>

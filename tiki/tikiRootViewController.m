@@ -83,6 +83,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     targetController.tikiNameText = [[tikiInfo tikiNames] objectAtIndex: indexPath.row];
     targetController.tikiPowerText = [[tikiInfo tikiPowers] objectAtIndex: indexPath.row];
     
+    
+//    NSArray *tikiCommansdArray = [[tikiInfo tikiCommands] objectAtIndex: indexPath.row];
+//    
+//    targetController.tikiCommandText = [tikiCommansdArray objectAtIndex: arc4random() % [tikiCommansdArray count]];
+    
     [self.navigationController
      pushViewController:targetController
      animated:YES];

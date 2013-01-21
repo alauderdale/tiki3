@@ -11,15 +11,19 @@
 #import "KGModal.h"
 #import "tikiTheme.h"
 #import "tikiBoldLabel.h"
+#import "tikiOverlayView.h"
 
 
 
 
 @interface tikiDetailViewController ()
 
+
+
 @end
 
 @implementation tikiDetailViewController
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -84,87 +88,29 @@
     self.tikiImage.image = [UIImage imageNamed:_tikiImageText];
 }
 
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+
+- (void)popOverlay
 {
-    if (motion == UIEventSubtypeMotionShake)
-    {
-        UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 200)];
-        
-        CGRect welcomeLabelRect = contentView.bounds;
-        welcomeLabelRect.origin.y = 20;
-        welcomeLabelRect.size.height = 20;
-        UIFont *welcomeLabelFont = [UIFont boldSystemFontOfSize:17];
-        UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:welcomeLabelRect];
-        welcomeLabel.text = [NSString stringWithFormat:@"%@ Say", self.tikiNameText];
-        welcomeLabel.font = welcomeLabelFont;
-        welcomeLabel.textColor = [UIColor whiteColor];
-        welcomeLabel.textAlignment = NSTextAlignmentCenter;
-        welcomeLabel.backgroundColor = [UIColor clearColor];
-        welcomeLabel.shadowColor = [UIColor blackColor];
-        welcomeLabel.shadowOffset = CGSizeMake(0, 1);
-        [contentView addSubview:welcomeLabel];
-        
-        CGRect infoLabelRect = CGRectInset(contentView.bounds, 5, 5);
-        infoLabelRect.origin.y = CGRectGetMaxY(welcomeLabelRect)+5;
-        infoLabelRect.size.height -= CGRectGetMinY(infoLabelRect);
-        UILabel *infoLabel = [[UILabel alloc] initWithFrame:infoLabelRect];
-        
-        infoLabel.text =  [[tikiInfo tikiCommands] objectAtIndex: arc4random() % [[tikiInfo tikiCommands] count]];;
-        
-        infoLabel.numberOfLines = 6;
-        infoLabel.textColor = [UIColor whiteColor];
-        infoLabel.textAlignment = NSTextAlignmentCenter;
-        infoLabel.backgroundColor = [UIColor clearColor];
-        infoLabel.shadowColor = [UIColor blackColor];
-        infoLabel.shadowOffset = CGSizeMake(0, 1);
-        [contentView addSubview:infoLabel];
-        
-        [[KGModal sharedInstance] showWithContentView:contentView andAnimated:YES];
-    }
+    
+    
+    tikiOverlayView *tikiOverlayView = [[[NSBundle mainBundle] loadNibNamed:@"tikiOverlayView" owner:self options:nil] objectAtIndex:0];
+    
+//    tikiOverlayView.tikiCommandLabel.text = [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+//    [tikiOverlayView.mailButton addTarget:self
+//               action:@selector(mailCommand:)
+//     forControlEvents:UIControlEventTouchDown];
+    
+    [[KGModal sharedInstance] showWithContentView:tikiOverlayView andAnimated:YES];
+
+
 }
 
 
-- (IBAction)ShowOverlay:(id)sender {
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 200)];
+- (void)mailCommand:(id)sender {
     
-    CGRect welcomeLabelRect = contentView.bounds;
-    welcomeLabelRect.origin.y = 20;
-    welcomeLabelRect.size.height = 20;
-    UIFont *welcomeLabelFont = [UIFont boldSystemFontOfSize:17];
-    UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:welcomeLabelRect];
-    welcomeLabel.text = [NSString stringWithFormat:@"%@ Say", self.tikiNameText];
-    welcomeLabel.font = welcomeLabelFont;
-    welcomeLabel.textColor = [UIColor whiteColor];
-    welcomeLabel.textAlignment = NSTextAlignmentCenter;
-    welcomeLabel.backgroundColor = [UIColor clearColor];
-    welcomeLabel.shadowColor = [UIColor blackColor];
-    welcomeLabel.shadowOffset = CGSizeMake(0, 1);
-    [contentView addSubview:welcomeLabel];
-    
-    CGRect infoLabelRect = CGRectInset(contentView.bounds, 5, 5);
-    infoLabelRect.origin.y = CGRectGetMaxY(welcomeLabelRect)+5;
-    infoLabelRect.size.height -= CGRectGetMinY(infoLabelRect);
-    UILabel *infoLabel = [[UILabel alloc] initWithFrame:infoLabelRect];
-    
-    infoLabel.text =  [[tikiInfo tikiCommands] objectAtIndex: arc4random() % [[tikiInfo tikiCommands] count]];
-    
-    infoLabel.numberOfLines = 6;
-    infoLabel.textColor = [UIColor whiteColor];
-    infoLabel.textAlignment = NSTextAlignmentCenter;
-    infoLabel.backgroundColor = [UIColor clearColor];
-    infoLabel.shadowColor = [UIColor blackColor];
-    infoLabel.shadowOffset = CGSizeMake(0, 1);
-    [contentView addSubview:infoLabel];
-    
-    [[KGModal sharedInstance] showWithContentView:contentView andAnimated:YES];
-}
 
-- (IBAction)tweet:(id)sender {
+    [[KGModal sharedInstance] hideAnimated:YES];
     
-}
-
-- (IBAction)mail:(id)sender {
-
     if ([MFMailComposeViewController canSendMail])
     {
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
@@ -175,14 +121,10 @@
         UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
         NSData *imageData = UIImagePNGRepresentation(myImage);
         [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
-        NSString *emailBody = [[tikiInfo tikiCommands] objectAtIndex: arc4random() % [[tikiInfo tikiCommands] count]];
+        NSString *emailBody = @"body";
         [mailer setMessageBody:emailBody isHTML:NO];
         ///left button
-        
-
-        
-        
-            [self presentViewController:mailer animated:YES completion:nil];
+        [self presentViewController:mailer animated:YES completion:nil];
     }
     else
     {
@@ -193,6 +135,22 @@
                                               otherButtonTitles: nil];
         [alert show];
     }
+
+
+}
+
+
+- (IBAction)ShowOverlay:(id)sender {
+    [self popOverlay];
+}
+
+- (IBAction)tweet:(id)sender {
+    
+}
+
+- (IBAction)mail:(id)sender {
+    [self popOverlay];
+
 }
 
 

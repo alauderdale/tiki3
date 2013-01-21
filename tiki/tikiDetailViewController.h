@@ -14,18 +14,23 @@
 #import <Twitter/Twitter.h>
 
 @interface tikiDetailViewController : UIViewController<MFMailComposeViewControllerDelegate>;
-@property (strong, nonatomic) IBOutlet UILabel *tikiPowerLabel;
+
 @property (weak, nonatomic) IBOutlet UIImageView *tikiImage;
 @property (strong, nonatomic) NSString *tikiNameText;
 @property (strong, nonatomic) NSString *tikiPowerText;
 @property (strong, nonatomic) NSString *tikiStrengthText;
 @property (strong, nonatomic) NSString *tikiDefenseText;
 @property (strong, nonatomic) NSString *tikiAttackText;
+@property (strong, nonatomic) NSArray *tikiCommansdArray;
+@property (strong, nonatomic) IBOutlet UILabel *tikiPowerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tikiStrengthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tikiDefenseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tikiAttackLabel;
 @property (strong, nonatomic) NSString *tikiImageText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
+
 
 - (IBAction)ShowOverlay:(id)sender;
 - (IBAction)tweet:(id)sender;

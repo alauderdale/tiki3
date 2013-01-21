@@ -231,12 +231,10 @@ NSString *const KGModalGradientViewTapped = @"KGModalGradientViewTapped";
     }
     
     CALayer *styleLayer = self.styleLayer = [[CALayer alloc] init];
-    styleLayer.cornerRadius = 4;
+    styleLayer.cornerRadius = 2;
     styleLayer.shadowColor= [[UIColor blackColor] CGColor];
     styleLayer.shadowOffset = CGSizeMake(0, 0);
     styleLayer.shadowOpacity = 0.5;
-    styleLayer.borderWidth = 1;
-    styleLayer.borderColor = [[UIColor whiteColor] CGColor];
     styleLayer.frame = CGRectInset(self.bounds, 12, 12);
     [self.layer addSublayer:styleLayer];
     
@@ -355,7 +353,7 @@ NSString *const KGModalGradientViewTapped = @"KGModalGradientViewTapped";
     [bezierPath closePath];
     CGContextSaveGState(context);
     CGContextSetShadowWithColor(context, shadow2Offset, shadow2BlurRadius, shadow2);
-    [[UIColor whiteColor] setFill];
+    [[UIColor redColor] setFill];
     [bezierPath fill];
     CGContextRestoreGState(context);
     

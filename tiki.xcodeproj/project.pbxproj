@@ -25,6 +25,8 @@
 		7E2381A216A525F3003E1EAC /* tikiViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2381A116A525F3003E1EAC /* tikiViewCell.m */; };
 		7E2381A616A527DA003E1EAC /* tikiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2381A416A527DA003E1EAC /* tikiDetailViewController.m */; };
 		7E2381A716A527DA003E1EAC /* tikiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2381A516A527DA003E1EAC /* tikiDetailViewController.xib */; };
+		7E41CF1C16AB7129000D2C62 /* tikiOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E41CF1B16AB7129000D2C62 /* tikiOverlayView.m */; };
+		7E41CF1F16AB7158000D2C62 /* tikiOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E41CF1E16AB7158000D2C62 /* tikiOverlayView.xib */; };
 		7E50020A16A61FBA004426F8 /* tikiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E50020916A61FBA004426F8 /* tikiCollectionViewCell.m */; };
 		7E50020D16A61FC8004426F8 /* tikiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E50020C16A61FC8004426F8 /* tikiCollectionViewCell.xib */; };
 		7E65540516A5E54500C3F0EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6EDF8B16A5E40700D83FBD /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -81,6 +83,9 @@
 		7E2381A316A527DA003E1EAC /* tikiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiDetailViewController.h; sourceTree = "<group>"; };
 		7E2381A416A527DA003E1EAC /* tikiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiDetailViewController.m; sourceTree = "<group>"; };
 		7E2381A516A527DA003E1EAC /* tikiDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiDetailViewController.xib; sourceTree = "<group>"; };
+		7E41CF1A16AB7129000D2C62 /* tikiOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiOverlayView.h; sourceTree = "<group>"; };
+		7E41CF1B16AB7129000D2C62 /* tikiOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiOverlayView.m; sourceTree = "<group>"; };
+		7E41CF1E16AB7158000D2C62 /* tikiOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiOverlayView.xib; sourceTree = "<group>"; };
 		7E50020816A61FBA004426F8 /* tikiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiCollectionViewCell.h; sourceTree = "<group>"; };
 		7E50020916A61FBA004426F8 /* tikiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiCollectionViewCell.m; sourceTree = "<group>"; };
 		7E50020C16A61FC8004426F8 /* tikiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tikiCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -273,6 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				7E8E468D16A8C0EA00282D79 /* tikiButton.h */,
+				7E41CF1A16AB7129000D2C62 /* tikiOverlayView.h */,
+				7E41CF1B16AB7129000D2C62 /* tikiOverlayView.m */,
+				7E41CF1E16AB7158000D2C62 /* tikiOverlayView.xib */,
 				7E8E468E16A8C0EA00282D79 /* tikiButton.m */,
 				7E8F082516A752F200FC7A9D /* tikiTheme.h */,
 				7E8F082616A752F200FC7A9D /* tikiTheme.m */,
@@ -371,6 +379,7 @@
 				7EEFB7AD16A8775C00DFE8AA /* selected@2x.png in Resources */,
 				7E21C1BE16AB3E94008F84CD /* tiki_button@2x.png in Resources */,
 				7E21C1C016AB43FA008F84CD /* metal_bg@2x.png in Resources */,
+				7E41CF1F16AB7158000D2C62 /* tikiOverlayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +404,7 @@
 				7EEFB78D16A7BF6800DFE8AA /* UIColor+HexColors.m in Sources */,
 				7EEFB79016A7BFD500DFE8AA /* UIView+Categories.m in Sources */,
 				7E8E468F16A8C0EA00282D79 /* tikiButton.m in Sources */,
+				7E41CF1C16AB7129000D2C62 /* tikiOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

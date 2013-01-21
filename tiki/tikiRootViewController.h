@@ -20,6 +20,7 @@
 
 @property (strong, nonatomic) NSString *tikiNameText;
 @property (strong, nonatomic) NSString *tikiPowerText;
+@property (strong, nonatomic) NSString *tikiCommandText;
 
 
 

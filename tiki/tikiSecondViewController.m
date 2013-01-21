@@ -89,6 +89,13 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     targetController.tikiPowerText = [[tikiInfo tikiPowers] objectAtIndex: indexPath.row];
     targetController.tikiImageText = [[tikiInfo tikiLargeImages] objectAtIndex: indexPath.row];
     targetController.tikiNameText = [[tikiInfo tikiNames] objectAtIndex: indexPath.row];
+    
+    
+    targetController.tikiCommansdArray = [[tikiInfo tikiCommands] objectAtIndex: indexPath.row];
+    
+    
+//    
+//    targetController.tikiCommandText = [tikiCommansdArray objectAtIndex: arc4random() % [tikiCommansdArray count]];
 
     
     [self.navigationController
