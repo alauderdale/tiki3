@@ -130,9 +130,9 @@
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
         mailer.mailComposeDelegate = self;
         [mailer setSubject:self.tikiNameText];
-        NSArray *toRecipients = [NSArray arrayWithObjects:@"fisrtMail@example.com", @"secondMail@example.com", nil];
+        NSArray *toRecipients = [NSArray arrayWithObjects: nil];
         [mailer setToRecipients:toRecipients];
-        UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
+        UIImage *myImage = [UIImage imageNamed:[self tikiImageText]];
         NSData *imageData = UIImagePNGRepresentation(myImage);
         [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
         NSString *emailBody = self.tikiCommandText;
@@ -189,19 +189,21 @@
 
 
 - (IBAction)ShowOverlay:(id)sender {
-    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: 0];
     [[KGModal sharedInstance] showWithContentView:self.overlayView andAnimated:YES];
 }
 
+- (IBAction)mail:(id)sender {
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: 1];
+    [[KGModal sharedInstance] showWithContentView:self.mailView andAnimated:YES];
+}
+
 - (IBAction)tweet:(id)sender {
-    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
+    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: 2];
     [[KGModal sharedInstance] showWithContentView:self.tweetView andAnimated:YES];
 }
 
-- (IBAction)mail:(id)sender {
-    self.tikiCommandText =  [self.tikiCommansdArray objectAtIndex: arc4random() % [self.tikiCommansdArray count]];
-    [[KGModal sharedInstance] showWithContentView:self.mailView andAnimated:YES];
-}
+
 
 
 
