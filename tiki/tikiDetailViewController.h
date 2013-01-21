@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import "UIView+Categories.h"
 #import <MessageUI/MessageUI.h>
-#import <Twitter/Twitter.h>
+
 
 
 @interface tikiDetailViewController : UIViewController<MFMailComposeViewControllerDelegate>;

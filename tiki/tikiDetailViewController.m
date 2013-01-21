@@ -12,6 +12,8 @@
 #import "tikiTheme.h"
 #import "tikiBoldLabel.h"
 #import "tikiOverlayView.h"
+#import <Social/Social.h>
+
 
 
 
@@ -86,6 +88,10 @@
     self.tikiAttackLabel.text = self.tikiAttackText;
     self.tikiPowerLabel.text = self.tikiPowerText;
     self.tikiImage.image = [UIImage imageNamed:_tikiImageText];
+    
+    //twiter
+    
+
 }
 
 - (UIView *)overlayView
@@ -183,6 +189,27 @@
     
     
     [[KGModal sharedInstance] hideAnimated:YES];
+    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:self.tikiCommandText];
+        [tweetSheet addImage:[UIImage imageNamed:_tikiImageText]];
+        
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Sorry"
+                                  message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
+                                  delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+    
+
     
     
 }

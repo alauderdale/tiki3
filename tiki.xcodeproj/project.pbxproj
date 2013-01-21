@@ -40,7 +40,8 @@
 		7E7A93BB16AD165F008D9942 /* shelf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A93BA16AD165F008D9942 /* shelf@2x.png */; };
 		7E7A93BD16AD2275008D9942 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A93BC16AD2275008D9942 /* Icon.png */; };
 		7E7A93BF16AD2279008D9942 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A93BE16AD2279008D9942 /* Icon@2x.png */; };
-		7E8E468316A8BD3B00282D79 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8E468216A8BD3B00282D79 /* Twitter.framework */; };
+		7E7A93C916AD2630008D9942 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7A93C816AD2630008D9942 /* Social.framework */; };
+		7E7A93CB16AD3023008D9942 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A93CA16AD3023008D9942 /* bg@2x.png */; };
 		7E8E468F16A8C0EA00282D79 /* tikiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E468E16A8C0EA00282D79 /* tikiButton.m */; };
 		7E8F081416A7490500FC7A9D /* topBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F081316A7490500FC7A9D /* topBar@2x.png */; };
 		7E8F082716A752F200FC7A9D /* tikiTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F082616A752F200FC7A9D /* tikiTheme.m */; };
@@ -109,6 +110,8 @@
 		7E7A93BA16AD165F008D9942 /* shelf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shelf@2x.png"; sourceTree = "<group>"; };
 		7E7A93BC16AD2275008D9942 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7E7A93BE16AD2279008D9942 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7E7A93C816AD2630008D9942 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7E7A93CA16AD3023008D9942 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "../../../Desktop/bg@2x.png"; sourceTree = "<group>"; };
 		7E8E468216A8BD3B00282D79 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		7E8E468D16A8C0EA00282D79 /* tikiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tikiButton.h; sourceTree = "<group>"; };
 		7E8E468E16A8C0EA00282D79 /* tikiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tikiButton.m; sourceTree = "<group>"; };
@@ -141,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8E468316A8BD3B00282D79 /* Twitter.framework in Frameworks */,
+				7E7A93C916AD2630008D9942 /* Social.framework in Frameworks */,
 				7EEFB7B016A87B2800DFE8AA /* MessageUI.framework in Frameworks */,
 				7E65540516A5E54500C3F0EF /* QuartzCore.framework in Frameworks */,
 				7E23817616A5164D003E1EAC /* UIKit.framework in Frameworks */,
@@ -156,6 +159,7 @@
 		7E23816616A5164D003E1EAC = {
 			isa = PBXGroup;
 			children = (
+				7E7A93C816AD2630008D9942 /* Social.framework */,
 				7E7A93BE16AD2279008D9942 /* Icon@2x.png */,
 				7E7A93BC16AD2275008D9942 /* Icon.png */,
 				7E8E468216A8BD3B00282D79 /* Twitter.framework */,
@@ -221,6 +225,7 @@
 			children = (
 				7E8F086E16A7721600FC7A9D /* tabBarBg@2x.png */,
 				7E8F087E16A79F8100FC7A9D /* explosions_thumb@2x.png */,
+				7E7A93CA16AD3023008D9942 /* bg@2x.png */,
 				7EEFB78516A7BAAE00DFE8AA /* GILGONS_.ttf */,
 				7E8F085B16A7659B00FC7A9D /* detail_bg@2x.png */,
 				7EEFB7AC16A8775C00DFE8AA /* selected@2x.png */,
@@ -401,6 +406,7 @@
 				7E7A93BB16AD165F008D9942 /* shelf@2x.png in Resources */,
 				7E7A93BD16AD2275008D9942 /* Icon.png in Resources */,
 				7E7A93BF16AD2279008D9942 /* Icon@2x.png in Resources */,
+				7E7A93CB16AD3023008D9942 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
